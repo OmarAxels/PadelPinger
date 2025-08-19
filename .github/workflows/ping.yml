@@ -2,7 +2,7 @@ name: Ping URL every 55 minutes
 
 on:
   schedule:
-    - cron: '*/55 * * * *'  # Every 55 minutes
+    - cron: '*/14 * * * *'  # Every 55 minutes
   workflow_dispatch:       # Allow manual trigger
 
 jobs:
@@ -23,3 +23,4 @@ jobs:
         
       - name: Run script
         run: python pinger.py
+
